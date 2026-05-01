@@ -23,21 +23,20 @@ function calculate() {
 
     let time = (speed > 0) ? (dist / speed) : 0;
 
-    // 🔴 Temperature Status
+    // Temperature Status
     let tempStatus = (temp > 1000) ? "Danger" :
                      (temp > 500) ? "Warning" : "Normal";
 
     let tempColor = (temp > 1000) ? "#ef4444" :
                     (temp > 500) ? "#f59e0b" : "#22c55e";
 
-    // 🔵 Vibration Status
+    // Vibration Status
     let vibStatus = (vibration > 10) ? "Danger" :
                     (vibration > 5) ? "Warning" : "Normal";
 
     let vibColor = (vibration > 10) ? "#ef4444" :
                    (vibration > 5) ? "#f59e0b" : "#22c55e";
 
-    // 📊 عرض البيانات
     document.getElementById("tempStatus").innerHTML = `Temp: <b>${tempStatus}</b>`;
     document.getElementById("tempStatus").style.color = tempColor;
 
