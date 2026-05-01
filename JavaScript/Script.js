@@ -93,3 +93,10 @@ if (remainingHours < 10) {
 document.getElementById("lifeStatus").innerText =
     `Remaining Life: ${remainingHours.toFixed(1)} h (${lifeText})`;
 }
+
+function generateRandomData() {
+    document.getElementById("temp").value = (Math.random() * 1200).toFixed(0);
+    document.getElementById("vibration").value = (Math.random() * 15).toFixed(1);
+    document.getElementById("speed").value = (Math.random() * 60).toFixed(0);
+    document.getElementById("dist").value = (Math.random() * 300).toFixed(0);
+}
