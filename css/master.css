@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-between  ;
+    justify-content: space-evenly;
 }
 
 .item{
@@ -58,6 +58,7 @@ h2{
     padding: 30px;
     border-radius: 20px;
     width: 450px;
+    height: 480px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 
 }
