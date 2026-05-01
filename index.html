@@ -23,7 +23,7 @@
 
     <div class="Field">
         <label for="temp">Temperature</label>
-        <input id="temp" type="number" placeholder="°C">
+        <input id="temp" type="number" placeholder="°C" required oninput="if(this.value.length > 4) this.value = this.value.slice(0, 4);">
     </div>
 
     <div class="Field">
@@ -36,12 +36,12 @@
 
     <div class="Field">
         <label for="rpm">Speed</label>
-        <input id="rpm" type="number">
+        <input id="rpm" type="number" placeholder="km/h" required oninput="if(this.value.length > 4) this.value = this.value.slice(0, 4);">
     </div>
 
     <div class="Field">
         <label for="dist">Distance</label>
-        <input id="dist" type="number" placeholder="km/h">
+        <input id="dist" type="number" placeholder="km" required oninput="if(this.value.length > 4) this.value = this.value.slice(0, 4);">
     </div>
 
     <button class="btn" onclick="calculate()">Save</button>
