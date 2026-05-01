@@ -39,6 +39,14 @@
     </div> -->
 
     <div class="Field">
+        <label for="load">Load</label>
+        <input id="load" type="number" placeholder="%" required oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);">
+    </div>
+    <div class="Field">
+        <label for="op">Oil Perssure</label>
+        <input id="op" type="number" placeholder="bar" required oninput="if(this.value.length > 1) this.value = this.value.slice(0, 1);">
+    </div>
+    <div class="Field">
         <label for="speed">Speed</label>
         <input id="speed" type="number" placeholder="km/h" required oninput="if(this.value.length > 4) this.value = this.value.slice(0, 4);">
     </div>
