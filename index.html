@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Ship Engine Prediction</title>
+</head>
+<body>
+    
+    <!-- <div class="test">
+        <h2>Chart</h2>
+        <div class="chart-box">
+         <canvas id="myChart"></canvas>
+        </div>  
+        
+    </div> -->
+  
+<div class="container">
+
+    <h1>Ship Engine Prediction</h1>
+
+    <div class="Field">
+        <label for="temp">Temperature</label>
+        <input id="temp" type="number" placeholder="°C">
+    </div>
+
+    <div class="Field">
+        <label for="type">Engine Type</label>
+        <select id="type">
+            <option value="diesel">Diesel</option>
+            <option value="gasoline">Gasoline</option>
+        </select>
+    </div>
+
+    <div class="Field">
+        <label for="rpm">Speed</label>
+        <input id="rpm" type="number">
+    </div>
+
+    <div class="Field">
+        <label for="dist">Distance</label>
+        <input id="dist" type="number" placeholder="km/h">
+    </div>
+
+    <button class="btn" onclick="calculate()">Save</button>
+    <hr>
+<h3>Engine Status</h3>
+        <div class="status-box" id="statusBox">
+        <div class="item" id="tempStatus">Temperature: --</div>
+        <div class="item" id="speedStatus">Speed: --</div>
+        <div class="item" id="timeStatus">Time: --</div>
+        <div class="item" id="reachStatus">Route: --</div>      
+        </div> 
+
+</div>
+
+
+<script src="JavaScript/Script.js"></script>
+</body>
+</html>
