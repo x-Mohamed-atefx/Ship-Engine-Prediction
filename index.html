@@ -22,21 +22,25 @@
     <h1>Ship Engine Prediction</h1>
 
     <div class="Field">
+        <label for="vibration">Vibrations</label>
+        <input id="vibration" type="number" placeholder="Vibration (mm/s)" required oninput="if(this.value.length > 5) this.value = this.value.slice(0, 5);">
+    </div>
+    <div class="Field">
         <label for="temp">Temperature</label>
         <input id="temp" type="number" placeholder="°C" required oninput="if(this.value.length > 4) this.value = this.value.slice(0, 4);">
     </div>
 
-    <div class="Field">
+    <!-- <div class="Field">
         <label for="type">Engine Type</label>
         <select id="type">
             <option value="diesel">Diesel</option>
             <option value="gasoline">Gasoline</option>
         </select>
-    </div>
+    </div> -->
 
     <div class="Field">
-        <label for="rpm">Speed</label>
-        <input id="rpm" type="number" placeholder="km/h" required oninput="if(this.value.length > 4) this.value = this.value.slice(0, 4);">
+        <label for="speed">Speed</label>
+        <input id="speed" type="number" placeholder="km/h" required oninput="if(this.value.length > 4) this.value = this.value.slice(0, 4);">
     </div>
 
     <div class="Field">
@@ -48,10 +52,13 @@
     <hr>
 <h3>Engine Status</h3>
         <div class="status-box" id="statusBox">
-        <div class="item" id="tempStatus">Temperature: --</div>
-        <div class="item" id="speedStatus">Speed: --</div>
-        <div class="item" id="timeStatus">Time: --</div>
-        <div class="item" id="reachStatus">Route: --</div>      
+            <div class="item" id="tempStatus">Temperature: --</div>
+            <div class="item" id="vibStatus">Vibration: --</div>
+            <div class="item" id="speedStatus">Speed: --</div>
+            <div class="item" id="timeStatus">Time: --</div>
+            <div class="item" id="reachStatus">Route: --</div>      
+            <div class="item" id="healthStatus">Health: --</div>
+            <div class="item" id="lifeStatus">Remaining Life: --</div>
         </div> 
 
 </div>

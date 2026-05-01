@@ -33,6 +33,7 @@ body {
 .item{
     text-align: center;
     width:32%;
+    flex: 1 1 40%;
     padding: 10px;
     border-radius: 10px;
 }
@@ -58,7 +59,7 @@ h2{
     padding: 30px;
     border-radius: 20px;
     width: 450px;
-    height: 480px;
+    height: auto;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 
 }
